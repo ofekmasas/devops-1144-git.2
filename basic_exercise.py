@@ -75,24 +75,83 @@ def String_Slicing():
 
 def replacing_text():
  sentence= 'I love programming in Python.'
- word_list = sentence.split()
- print(word_list)
+ print(sentence.replace('Python','bash'))
 
-replacing_text
+#replacing_text()
 
+def Checking_Substrings(text,phrase):
+ if(phrase in text):
+  print(True)
+ else:
+  print(False)
 
+#Checking_Substrings('The quick brown fox jumps over the lazy dog','fox')
 
+def Creating_and_Printing_Lists():
+ fruits = ['banana', 'watermellon', 'apple']
+ print(fruits)
+ fruits.append('peach')
+ print(fruits)
+ fruits.pop(0)
+ print(fruits)
 
+#Creating_and_Printing_Lists()
 
+def Accessing_List_Elements():
+ animals = ['cat', 'dog', 'rabbit', 'hamster']
+ print('The first animal is: ' + animals[0])
+ print('The last animal is: ' + animals[-1])
+ print('The total number of animals is: ' + str(len(animals)))
 
+#Accessing_List_Elements()
 
+def Modifying_Lists():
+ nums= [5, 10, 15, 20, 25]
+ nums[1]=12
+ print(nums)
+ nums.append(30)
+ print(nums)
+ nums.pop(-1)
+ print(nums)
 
+#Modifying_Lists()
 
+def List_Slicing():
+ nums=[1,2,3,4,5,6,7,8,9,10]
+ print(nums[:5:])
+ print(nums[:-4:-1])
+ nums.reverse()
+ print(nums)
 
+#List_Slicing()
 
+def List_Comprehension(nums):
+ squares = [i*2 for i in nums]
+ print(squares)
 
-def fibonachi(n):
- a=1
- b=1
- if(b<n):
-  return ()
+#List_Comprehension([1,2,3,4,5,6,7,8,9,10])
+
+def Counting_Occurrences(fruits,phrase):
+  print(fruits.count(phrase))
+
+#Counting_Occurrences(['apple', 'banana', 'apple', 'orange', 'banana', 'apple'],'apple')
+
+def Finding_the_Index(colors,color):
+  print(colors.index(color))
+
+#Finding_the_Index(['red', 'blue', 'green', 'yellow', 'blue'],'blue')
+
+def List_Concatenation():
+  nums1 = [1,2,3]
+  nums2 = [4,5,6]
+  print (nums1 +nums2)
+
+List_Concatenation()
+
+def Removing_Specific_Items(nums,number):
+  while number in nums:
+    nums.remove(number)
+  return nums
+
+print(Removing_Specific_Items([1, 2, 2, 3, 4, 2],2))
+
