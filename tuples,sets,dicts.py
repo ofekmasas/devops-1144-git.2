@@ -63,3 +63,62 @@ def Counting_Characters(word):
  return output
 
 #print(Counting_Characters('helloll'))
+
+def Creating_and_Using_Sets():
+ my_set = {1,2,3,4,5}
+ my_set.add(6)
+ print(my_set)
+ my_set.add(3)
+ print(my_set)
+ my_set.pop(2)
+ print(my_set)
+
+#Creating_and_Using_Sets()
+
+def Set_Operations():
+ set_a = {1, 2, 3, 4}
+ set_b = {3, 4, 5, 6}
+ print(set_a | set_b)
+ print(set_a.union(set_b))
+ print(set_a.intersection(set_b))
+ print(set_a & set_b)
+ print(set_a.difference(set_b))
+ print(set_a-set_b)
+ print(set_a.symmetric_difference(set_b))
+ print(set_a^set_b)
+
+#Set_Operations()
+
+def unique_elements():
+ nums= [1, 2, 2, 3, 4, 4, 5]
+ print(set(nums))
+
+#unique_elements()
+
+def Membership_Testing():
+ set_a = {1, 2, 3, 4}
+ set_b = {3, 4, 5, 6}
+ if(3 in set_a):
+  print(True)
+ if(4 not in set_a):
+  print(True)
+ else:
+  print(False)
+
+#Membership_Testing()
+
+def Set_Methods():
+ set_a = {1, 2, 3, 4}
+ set_b = {3, 4, 5, 6}
+ set_a.add(3000)
+ print(set_a)
+ set_a.remove(3000)
+ print(set_a)
+ set_a.discard(3001)
+ print(set_a)
+
+#Set_Methods()
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+result = [row[1] for row in matrix]
+print(result)
