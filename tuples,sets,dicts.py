@@ -118,7 +118,3 @@ def Set_Methods():
  print(set_a)
 
 #Set_Methods()
-
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-result = [row[1] for row in matrix]
-print(result)

@@ -150,7 +150,7 @@ def celsius_to_fahrenheit(celsius):
     return Fahrenheit
 #print(celsius_to_fahrenheit(24))
 
-def is_palindrome(word):
+#def is_palindrome(word):
     i=0
     k=1
     while i<len(word):
@@ -159,8 +159,22 @@ def is_palindrome(word):
         k+=2
         i+=1
     return('is palindrom')
-
 #print(is_palindrome('lololo'))
+
+
+
+def is_palindrom2(word):
+    if word == word[::-1]:
+        return('is palindrom')
+    return('is NOT palindrom')
+
+
+
+
+print(is_palindrom2('lololol'))
+
+
+
 
 def Sum_of_List(nums):
     sum=0
@@ -194,5 +208,16 @@ def Simple_Calculator(a,operator,b):
             return ('YOU ARE NOT ALLOWED TO DIVIDE BY ZERO!!!')
         
 #print(Simple_Calculator(50,"+",5))
+
+def factorial(n):
+    if n<0:
+        return('invalid input')
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return n*factorial(n-1)
+    
+#print(factorial(1))
 
 

@@ -1,4 +1,2 @@
-fruits = {"apple": 3, "banana": 5, "cherry": 2}
-for i in fruits:
-    print(f'The key is {i}')
-    print(f'The value is: {fruits[i]}')
+data = [10, 20, 30, 40, 50]
+print(data[-3])
