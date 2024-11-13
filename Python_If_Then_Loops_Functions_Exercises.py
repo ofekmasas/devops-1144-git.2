@@ -122,3 +122,77 @@ def square_func(num):
     return(num*num)
 
 #print(square_func(7))
+
+def Factorial_Function(n):
+    if n<0:
+        return('invalid input')
+    if n==0:
+        return 0
+    
+    result=1
+    for i in range(n,0,-1):
+        result*=i
+    return result
+
+#print(Factorial_Function(5))
+
+def find_max(nums):
+    max=nums[0]
+    for i in nums:
+        if i>max:
+            max=i
+    return max
+
+#print(find_max([1, 5, 3, 9, 2,12,-56,933]))
+
+def celsius_to_fahrenheit(celsius):
+    Fahrenheit = celsius*(9/5)+32
+    return Fahrenheit
+#print(celsius_to_fahrenheit(24))
+
+def is_palindrome(word):
+    i=0
+    k=1
+    while i<len(word):
+        if word[i] !=word[i-k]:
+            return('NOT palindrome')
+        k+=2
+        i+=1
+    return('is palindrom')
+
+#print(is_palindrome('lololo'))
+
+def Sum_of_List(nums):
+    sum=0
+    for i in nums:
+        sum +=i
+    return sum
+#print(Sum_of_List([10, 20, 30, 40]))
+
+def is_prime(number):
+    for i in range(2,number):
+       if(i>number/2):
+         return('is prime') 
+       if number%i==0:
+          return('is not prime')
+    return('is prime')
+
+#print(is_prime(8191))
+
+def Simple_Calculator(a,operator,b):
+
+    if operator =='+':
+        return (a+b)
+    elif operator=='-':
+        return (a-b)
+    elif operator=='*':
+        return (a*b)
+    elif operator=='/':
+        if b!=0:
+            return (a/b)
+        else:
+            return ('YOU ARE NOT ALLOWED TO DIVIDE BY ZERO!!!')
+        
+#print(Simple_Calculator(50,"+",5))
+
+
