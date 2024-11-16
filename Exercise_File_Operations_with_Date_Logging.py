@@ -31,17 +31,14 @@ while journal_entries !='stop':
 ############################task4
 jornal=open(r"C:\Users\ofekp\OneDrive\שולחן העבודה\journal.txt",'r')
 
+list_of_lines = jornal.readlines()
+lines_num = len(list_of_lines)
+print(f'\nThe number of lines: {lines_num}')
 
-lines = len(jornal.readlines())
-print(f'The number of lines: {lines}')
-
-
-
-
-
-for line in lines:
-    len(line.split())
-sum = 
-words= sum()
-print('Number of words: ' + words)
+sum=0
+for line in list_of_lines:
+    words_in_line = line.split()
+    num_of_words = len(words_in_line)
+    sum += num_of_words
+print(f'Number of words: {sum}')
 
