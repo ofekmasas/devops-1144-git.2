@@ -171,7 +171,7 @@ def is_palindrom2(word):
 
 
 
-print(is_palindrom2('lololol'))
+#print(is_palindrom2('lololol'))
 
 
 
@@ -191,6 +191,7 @@ def is_prime(number):
           return('is not prime')
     return('is prime')
 
+print(is_prime(11))
 #print(is_prime(8191))
 
 def Simple_Calculator(a,operator,b):
