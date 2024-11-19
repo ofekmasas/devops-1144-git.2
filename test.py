@@ -1,4 +1,2 @@
-#import datetime
-#print(datetime.datetime.now())
-
-print('(',end='')
+str='Title: Data Science Handbook, Author: Jane Smith, Copies: 5'
+print(str.split(','))
