@@ -37,9 +37,8 @@ def calculate_lines_and_words(filepath):
 
     sum=0
     for line in list_of_lines:
-        words_in_line = line.split()
-        num_of_words = len(words_in_line)
-        sum += num_of_words
+        words_in_line = len(line.split())
+        sum += words_in_line
 
     return lines_num,sum
 
