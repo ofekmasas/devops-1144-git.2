@@ -30,18 +30,32 @@ class Library:
   def print_list(self,object):
      print(list(object))
      
- 
+
+harry_potter=Book('harry_potter','JK roling',5)
+print(f'The author of the book is: {harry_potter.author}')
+print(f'The number of copies is: {harry_potter.copies}')
+
+print(harry_potter)
+
+
+
+
+
+
+
+
+
      
 # Example Usage
-library = Library()
-if(library.find_book("Data Science Handbook") == True):
-   print("The book was found")
-else:
-   print("The book was not found (before adding it)")
-library.add_book(Book("Python 101", "John Doe", 3))
-library.add_book(Book("Data Science Handbook", "Jane Smith", 5))
-print(library.books)
-library.list_books()
+# library = Library()
+# if(library.find_book("Data Science Handbook") == True):
+#    print("The book was found")
+# else:
+#    print("The book was not found (before adding it)")
+# library.add_book(Book("Python 101", "John Doe", 3))
+# library.add_book(Book("Data Science Handbook", "Jane Smith", 5))
+# print(library.books)
+# library.list_books()
 
 
 # if(library.find_book("Data Science Handbook") == True):
